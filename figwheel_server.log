@@ -1,0 +1,275 @@
+[0mCompiling "resources/public/js/twitter-sdk.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/twitter_sdk/core.cljs   line:7  column:1  ----[0m
+
+  [1mget already refers to: cljs.core/get being replaced by: twitter-sdk.core/get[0m
+
+  [36m 3[0m  [36m  (:require [clojure.spec :as s][0m
+  [36m 4[0m  [36m            [cljs.core.async :refer [<!]][0m
+  [36m 5[0m  [36m            [twitter-sdk.requests :as r]))[0m
+  [36m 6[0m  [36m[0m
+  [33m 7[0m  [1m(defn get [config path params][0m
+  [0m  [0m  [33m^--- get already refers to: cljs.core/get being replaced by: twitter-sdk.core/get[0m
+  [36m 8[0m  [36m  (r/request :get "http://httpbin.org/get"))[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m(defn post [config path params][0m
+  [36m11[0m  [36m  (println config))[0m
+
+[36m----  Compiler Warning : Please see src/twitter_sdk/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/twitter-sdk.js" in 1.293 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/twitter_sdk/requests.js
+[0mCompiling "resources/public/js/twitter-sdk.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/twitter_sdk/core.cljs   line:7  column:1  ----[0m
+
+  [1mget already refers to: cljs.core/get being replaced by: twitter-sdk.core/get[0m
+
+  [36m 3[0m  [36m  (:require [clojure.spec :as s][0m
+  [36m 4[0m  [36m            [cljs.core.async :refer [<!]][0m
+  [36m 5[0m  [36m            [twitter-sdk.requests :as r]))[0m
+  [36m 6[0m  [36m[0m
+  [33m 7[0m  [1m(defn get [config path params][0m
+  [0m  [0m  [33m^--- get already refers to: cljs.core/get being replaced by: twitter-sdk.core/get[0m
+  [36m 8[0m  [36m  (r/request :get "http://httpbin.org/get"))[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m(defn post [config path params][0m
+  [36m11[0m  [36m  (println config))[0m
+
+[36m----  Compiler Warning : Please see src/twitter_sdk/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/twitter-sdk.js" in 0.427 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/twitter_sdk/requests.js
+[0mCompiling "resources/public/js/twitter-sdk.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/twitter_sdk/core.cljs   line:7  column:1  ----[0m
+
+  [1mget already refers to: cljs.core/get being replaced by: twitter-sdk.core/get[0m
+
+  [36m 3[0m  [36m  (:require [clojure.spec :as s][0m
+  [36m 4[0m  [36m            [cljs.core.async :refer [<!]][0m
+  [36m 5[0m  [36m            [twitter-sdk.requests :as r]))[0m
+  [36m 6[0m  [36m[0m
+  [33m 7[0m  [1m(defn get [config path params][0m
+  [0m  [0m  [33m^--- get already refers to: cljs.core/get being replaced by: twitter-sdk.core/get[0m
+  [36m 8[0m  [36m  (r/request :get "http://httpbin.org/get"))[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m(defn post [config path params][0m
+  [36m11[0m  [36m  (println config))[0m
+
+[36m----  Compiler Warning : Please see src/twitter_sdk/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/twitter-sdk.js" in 0.635 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/twitter_sdk/requests.js
+[0mCompiling "resources/public/js/twitter-sdk.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/twitter_sdk/core.cljs   line:7  column:1  ----[0m
+
+  [1mget already refers to: cljs.core/get being replaced by: twitter-sdk.core/get[0m
+
+  [36m 3[0m  [36m  (:require [clojure.spec :as s][0m
+  [36m 4[0m  [36m            [cljs.core.async :refer [<!]][0m
+  [36m 5[0m  [36m            [twitter-sdk.requests :as r]))[0m
+  [36m 6[0m  [36m[0m
+  [33m 7[0m  [1m(defn get [config path params][0m
+  [0m  [0m  [33m^--- get already refers to: cljs.core/get being replaced by: twitter-sdk.core/get[0m
+  [36m 8[0m  [36m  (r/request :get "http://httpbin.org/get"))[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m(defn post [config path params][0m
+  [36m11[0m  [36m  (println config))[0m
+
+[36m----  Compiler Warning : Please see src/twitter_sdk/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/twitter-sdk.js" in 0.444 seconds.[0m
+notifying browser that file changed:  out/twitter_sdk/requests.js
+[0mCompiling "resources/public/js/twitter-sdk.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/twitter_sdk/core.cljs   line:7  column:1  ----[0m
+
+  [1mget already refers to: cljs.core/get being replaced by: twitter-sdk.core/get[0m
+
+  [36m 3[0m  [36m  (:require [clojure.spec :as s][0m
+  [36m 4[0m  [36m            [cljs.core.async :refer [<!]][0m
+  [36m 5[0m  [36m            [twitter-sdk.requests :as r]))[0m
+  [36m 6[0m  [36m[0m
+  [33m 7[0m  [1m(defn get [config path params][0m
+  [0m  [0m  [33m^--- get already refers to: cljs.core/get being replaced by: twitter-sdk.core/get[0m
+  [36m 8[0m  [36m  (r/request :get "http://httpbin.org/get"))[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m(defn post [config path params][0m
+  [36m11[0m  [36m  (println config))[0m
+
+[36m----  Compiler Warning : Please see src/twitter_sdk/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/twitter-sdk.js" in 0.417 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/twitter_sdk/requests.js
+[0mCompiling "resources/public/js/twitter-sdk.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/twitter_sdk/requests.cljs   line:19  column:5  ----[0m
+
+  [1mUse of undeclared Var twitter-sdk.requests/set-xhr[0m
+
+  [36m15[0m  [36m   :post http/post})[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m(defn request[0m
+  [36m18[0m  [36m  ([verb url params][0m
+  [33m19[0m  [1m   @set-xhr[0m
+  [0m  [0m  [33m    ^--- Use of undeclared Var twitter-sdk.requests/set-xhr[0m
+  [36m20[0m  [36m   ((get verb-fn verb http/get) url params))[0m
+  [36m21[0m  [36m  ([verb url][0m
+  [36m22[0m  [36m   (request verb url {})))[0m
+
+[36m----  Compiler Warning : Please see src/twitter_sdk/requests.cljs  ----[0m
+[36m----  Compiler Warning on   src/twitter_sdk/core.cljs   line:7  column:1  ----[0m
+
+  [1mget already refers to: cljs.core/get being replaced by: twitter-sdk.core/get[0m
+
+  [36m 3[0m  [36m  (:require [clojure.spec :as s][0m
+  [36m 4[0m  [36m            [cljs.core.async :refer [<!]][0m
+  [36m 5[0m  [36m            [twitter-sdk.requests :as r]))[0m
+  [36m 6[0m  [36m[0m
+  [33m 7[0m  [1m(defn get [config path params][0m
+  [0m  [0m  [33m^--- get already refers to: cljs.core/get being replaced by: twitter-sdk.core/get[0m
+  [36m 8[0m  [36m  (r/request :get "http://httpbin.org/get"))[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m(defn post [config path params][0m
+  [36m11[0m  [36m  (println config))[0m
+
+[36m----  Compiler Warning : Please see src/twitter_sdk/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/twitter-sdk.js" in 0.763 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/twitter_sdk/requests.js
+[0mCompiling "resources/public/js/twitter-sdk.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/twitter_sdk/core.cljs   line:7  column:1  ----[0m
+
+  [1mget already refers to: cljs.core/get being replaced by: twitter-sdk.core/get[0m
+
+  [36m 3[0m  [36m  (:require [clojure.spec :as s][0m
+  [36m 4[0m  [36m            [cljs.core.async :refer [<!]][0m
+  [36m 5[0m  [36m            [twitter-sdk.requests :as r]))[0m
+  [36m 6[0m  [36m[0m
+  [33m 7[0m  [1m(defn get [config path params][0m
+  [0m  [0m  [33m^--- get already refers to: cljs.core/get being replaced by: twitter-sdk.core/get[0m
+  [36m 8[0m  [36m  (r/request :get "http://httpbin.org/get"))[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m(defn post [config path params][0m
+  [36m11[0m  [36m  (println config))[0m
+
+[36m----  Compiler Warning : Please see src/twitter_sdk/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/twitter-sdk.js" in 0.509 seconds.[0m
+notifying browser that file changed:  out/twitter_sdk/requests.js
+[0mCompiling "resources/public/js/twitter-sdk.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/twitter_sdk/core.cljs   line:7  column:1  ----[0m
+
+  [1mget already refers to: cljs.core/get being replaced by: twitter-sdk.core/get[0m
+
+  [36m 3[0m  [36m  (:require [clojure.spec :as s][0m
+  [36m 4[0m  [36m            [cljs.core.async :refer [<!]][0m
+  [36m 5[0m  [36m            [twitter-sdk.requests :as r]))[0m
+  [36m 6[0m  [36m[0m
+  [33m 7[0m  [1m(defn get [config path params][0m
+  [0m  [0m  [33m^--- get already refers to: cljs.core/get being replaced by: twitter-sdk.core/get[0m
+  [36m 8[0m  [36m  (r/request :get "http://httpbin.org/get"))[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m(defn post [config path params][0m
+  [36m11[0m  [36m  (println config))[0m
+
+[36m----  Compiler Warning : Please see src/twitter_sdk/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/twitter-sdk.js" in 0.476 seconds.[0m
+notifying browser that file changed:  out/twitter_sdk/requests.js
+[0mCompiling "resources/public/js/twitter-sdk.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/twitter_sdk/core.cljs   line:7  column:1  ----[0m
+
+  [1mget already refers to: cljs.core/get being replaced by: twitter-sdk.core/get[0m
+
+  [36m 3[0m  [36m  (:require [clojure.spec :as s][0m
+  [36m 4[0m  [36m            [cljs.core.async :refer [<!]][0m
+  [36m 5[0m  [36m            [twitter-sdk.requests :as r]))[0m
+  [36m 6[0m  [36m[0m
+  [33m 7[0m  [1m(defn get [config path params][0m
+  [0m  [0m  [33m^--- get already refers to: cljs.core/get being replaced by: twitter-sdk.core/get[0m
+  [36m 8[0m  [36m  (r/request :get "http://httpbin.org/get"))[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m(defn post [config path params][0m
+  [36m11[0m  [36m  (println config))[0m
+
+[36m----  Compiler Warning : Please see src/twitter_sdk/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/twitter-sdk.js" in 0.523 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/twitter_sdk/requests.js
+[0mCompiling "resources/public/js/twitter-sdk.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/twitter_sdk/core.cljs   line:7  column:1  ----[0m
+
+  [1mget already refers to: cljs.core/get being replaced by: twitter-sdk.core/get[0m
+
+  [36m 3[0m  [36m  (:require [clojure.spec :as s][0m
+  [36m 4[0m  [36m            [cljs.core.async :refer [<!]][0m
+  [36m 5[0m  [36m            [twitter-sdk.requests :as r]))[0m
+  [36m 6[0m  [36m[0m
+  [33m 7[0m  [1m(defn get [config path params][0m
+  [0m  [0m  [33m^--- get already refers to: cljs.core/get being replaced by: twitter-sdk.core/get[0m
+  [36m 8[0m  [36m  (r/request :get "http://httpbin.org/get"))[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m(defn post [config path params][0m
+  [36m11[0m  [36m  (println config))[0m
+
+[36m----  Compiler Warning : Please see src/twitter_sdk/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/twitter-sdk.js" in 0.444 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/twitter_sdk/requests.js
+[0mCompiling "resources/public/js/twitter-sdk.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/twitter_sdk/core.cljs   line:7  column:1  ----[0m
+
+  [1mget already refers to: cljs.core/get being replaced by: twitter-sdk.core/get[0m
+
+  [36m 3[0m  [36m  (:require [clojure.spec :as s][0m
+  [36m 4[0m  [36m            [cljs.core.async :refer [<!]][0m
+  [36m 5[0m  [36m            [twitter-sdk.requests :as r]))[0m
+  [36m 6[0m  [36m[0m
+  [33m 7[0m  [1m(defn get [config path params][0m
+  [0m  [0m  [33m^--- get already refers to: cljs.core/get being replaced by: twitter-sdk.core/get[0m
+  [36m 8[0m  [36m  (r/request :get "http://httpbin.org/get"))[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m(defn post [config path params][0m
+  [36m11[0m  [36m  (println config))[0m
+
+[36m----  Compiler Warning : Please see src/twitter_sdk/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/twitter-sdk.js" in 0.483 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/twitter_sdk/requests.js
+[0mCompiling "resources/public/js/twitter-sdk.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/twitter_sdk/core.cljs   line:7  column:1  ----[0m
+
+  [1mget already refers to: cljs.core/get being replaced by: twitter-sdk.core/get[0m
+
+  [36m 3[0m  [36m  (:require [clojure.spec :as s][0m
+  [36m 4[0m  [36m            [cljs.core.async :refer [<!]][0m
+  [36m 5[0m  [36m            [twitter-sdk.requests :as r]))[0m
+  [36m 6[0m  [36m[0m
+  [33m 7[0m  [1m(defn get [config path params][0m
+  [0m  [0m  [33m^--- get already refers to: cljs.core/get being replaced by: twitter-sdk.core/get[0m
+  [36m 8[0m  [36m  (r/request :get "http://httpbin.org/get"))[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m(defn post [config path params][0m
+  [36m11[0m  [36m  (println config))[0m
+
+[36m----  Compiler Warning : Please see src/twitter_sdk/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/twitter-sdk.js" in 0.319 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/twitter_sdk/requests.js
+[0mCompiling "resources/public/js/twitter-sdk.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/twitter_sdk/core.cljs   line:7  column:1  ----[0m
+
+  [1mget already refers to: cljs.core/get being replaced by: twitter-sdk.core/get[0m
+
+  [36m 3[0m  [36m  (:require [clojure.spec :as s][0m
+  [36m 4[0m  [36m            [cljs.core.async :refer [<!]][0m
+  [36m 5[0m  [36m            [twitter-sdk.requests :as r]))[0m
+  [36m 6[0m  [36m[0m
+  [33m 7[0m  [1m(defn get [config path params][0m
+  [0m  [0m  [33m^--- get already refers to: cljs.core/get being replaced by: twitter-sdk.core/get[0m
+  [36m 8[0m  [36m  (r/request :get "http://httpbin.org/get"))[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m(defn post [config path params][0m
+  [36m11[0m  [36m  (println config))[0m
+
+[36m----  Compiler Warning : Please see src/twitter_sdk/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/twitter-sdk.js" in 0.394 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/twitter_sdk/requests.js
