@@ -5,7 +5,8 @@
                  [org.clojure/clojurescript "1.9.473"]
                  [org.clojure/core.async "0.2.395"]
                  [gracilius "0.1.0-SNAPSHOT"]
-                 [cljs-http "0.1.42"]]
+                 [http-arbiter "0.1.0-SNAPSHOT"]
+                 [camel-snake-kebab "0.4.0"]]
   :profiles {:dev-node {:dependencies [[com.cemerick/piggieback "0.2.1"]
                                        [org.clojure/tools.nrepl "0.2.12"]]
                         :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
@@ -23,8 +24,8 @@
             [lein-environ "1.1.0"]]
   :npm {:dependencies [[source-map-support "0.4.0"]
                        [xhr2 "*"]]}
-  :cljsbuild {:builds [{:id "node"
-                        :source-paths ["src" "env/src/node"]
+  :cljsbuild {:builds [{:id "dev-node"
+                        :source-paths ["src"]
                         :compiler {:output-to "main.js"  ; default: target/cljsbuild-main.js
                                    :output-dir "out"
                                    :target :nodejs
