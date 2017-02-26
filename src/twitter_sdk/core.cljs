@@ -10,6 +10,7 @@
         method "POST"
         header-params (merge config {:oauth-callback "oob"})
         oauth-header (oauth/gen-oauth-header method url header-params {} secrets)]
+    (println oauth-header)
     (http/post url {:headers {"Authorization" oauth-header}})))
 
 (defn post-status

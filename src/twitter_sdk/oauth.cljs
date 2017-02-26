@@ -8,20 +8,28 @@
   [length]
   (clojure.string/join (take length (repeatedly #(rand-nth "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789")))))
 
+
 (defn percent-encode
   [string]
   (-> string
       js/encodeURIComponent
-      (clojure.string/replace #"\+" "%20")
-      (clojure.string/replace #"\*" "%2A")
-      (clojure.string/replace #"%7E" "~")
-      (clojure.string/replace #"!" "%21")))
+      (clojure.string/replace #"[!'()*]" #(str "%" (.toString (.charCodeAt % 0) 16)))))
+
+#_(defn percent-encode
+    [string]
+    (-> string
+        js/encodeURIComponent
+        (clojure.string/replace #"\+" "%20")
+        (clojure.string/replace #"\*" "%2A")
+        (clojure.string/replace #"%7E" "~")
+        (clojure.string/replace #"!" "%21")))
 
 (defn sign
-  [signing-key base-string]
-  (let [hmac (doto (Hmac. (Sha1.) (c/stringToByteArray signing-key))
+  [key base-string]
+  (let [hmac (doto (Hmac. (Sha1.) (c/stringToByteArray key))
                (.update base-string))]
     (b64/encodeByteArray (.digest hmac))))
+
 
 (defn format-params
   [params]
@@ -39,19 +47,22 @@
                          (#(do (doseq [x %] (println x))
                                %))
                          (clojure.string/join "&")
-                         js/encodeURIComponent
+                         percent-encode
                          (str (percent-encode url) "&")
                          (str method "&"))]
     (println base-string)
     (sign signing-key base-string)))
 
+(defonce params-atom (atom nil))
+
 (defn gen-oauth-header
   [method url {:keys [oauth-nonce oauth-timestamp] :as header-params} body-params
    {:keys [consumer-secret oauth-token-secret] :as secrets}]
+  (reset! params-atom [method url header-params body-params
+                       secrets])
   (let [signing-key (str (percent-encode consumer-secret) "&"
                          (when oauth-token-secret
                            (percent-encode oauth-token-secret)))
-        _ (println signing-key)
         header-params (cond-> header-params
                         (not oauth-nonce) (assoc :oauth-nonce (rand-str 30))
                         (not oauth-timestamp) (assoc :oauth-timestamp (-> (js/Date.)

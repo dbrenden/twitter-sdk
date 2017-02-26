@@ -17,11 +17,16 @@
                                           [org.clojure/tools.nrepl "0.2.12"]]
                            :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
                            :source-paths ["src" "target/classes"]
-                           :env {:runtime "browser"}}}
+                           :env {:runtime "browser"}}
+             :test [:dev-node]}
   :jvm-opts ^:replace ["-Xmx1g" "-server"]
   :plugins [[lein-cljsbuild "1.1.4"]
             [lein-npm "0.6.1"]
-            [lein-environ "1.1.0"]]
+            [lein-environ "1.1.0"]
+            [lein-doo "0.1.7"]]
+  :doo {:build "test"
+        :alias {:default [:node]}}
+  :aliases {"test" ["with-profile" "+test" "doo" "node" "test" "once"]}
   :npm {:dependencies [[source-map-support "0.4.0"]
                        [xhr2 "*"]]}
   :cljsbuild {:builds [{:id "dev-node"
@@ -33,6 +38,14 @@
                                    :optimizations :none
                                    :cache-analysis true
                                    :pretty-print true}}
+                       {:id "test"
+                        :source-paths ["src" "test"]
+                        :compiler {:output-to "target/testable.js"
+                                   :output-dir "target"
+                                   :main twitter-sdk.runner
+                                   :optimizations :none
+                                   :target :nodejs}}
+
                        {:id "dev-browser"
                         :source-paths ["src"] ;;<--- note this isn't in source-paths above
                         :figwheel true
@@ -41,5 +54,5 @@
                                    :output-to "resources/public/js/twitter-sdk.js"
                                    :output-dir "resources/public/js/out"}}]}
   :source-paths ["src" "target/classes"]
-  :clean-targets ["out" "release"]
+  :clean-targets ["out" "release" "target"]
   :target-path "target")
